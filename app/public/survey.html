@@ -6,8 +6,8 @@
 
 <title>Survey</title>
 
-<!--Materialize-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!--CSS
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
@@ -27,52 +27,225 @@
 </head>
 
 <body>
-<div class = "container">
- <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="name" type="text" class="validate">
-          <label for="name">Name (Required)</label>
+
+<div class = "container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h3>Friend Finder</h3>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="img" type="text" class="validate">
-          <label for="img">Link to Photo (Required)</label>
-        </div>
-      </div>
-    </form>
-  </div>
-
-
-<!-- Dropdown Trigger -->
-  <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-
-  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul>
-
+    </nav>
 </div>
+
+<!--About Me Section-->
+<div class = "container">
+    <h3>About You</h3>
+    <form>
+        <div class="form-group">
+            <div class = "row">
+                <div class = "col-md-6">
+                    <label for="exampleInputEmail1">Name (Required)</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class = "row">
+                <div class = "col-md-6">
+                    <label for="exampleInputEmail1">Picture Image (Required)</label>
+                    <input type="text" class="form-control" id="imgInput" placeholder="Image">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Question Section-->
+<!--Question1-->
+<div class = "container">
+    <div id = "question1">
+        <h4>Question 1</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question2-->
+    <div id = "question2">
+        <h4>Question 2</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question3-->
+    <div id = "question3">
+        <h4>Question 3</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question4-->
+    <div id = "question4">
+        <h4>Question 4</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question5-->
+    <div id = "question5">
+        <h4>Question 5</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question6-->
+    <div id = "question6">
+        <h4>Question 6</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question7-->
+    <div id = "question7">
+        <h4>Question 7</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question8-->
+    <div id = "question8">
+        <h4>Question 8</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question9-->
+    <div id = "question9">
+        <h4>Question 9</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+<!--Question10-->
+    <div id = "question10">
+        <h4>Question 10</h4>
+        <div class = "row">
+            <div class = "col-md-3">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Button-->
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+      <div class="container">
+        <p><a href="#">API Friends List</a> | <a href="#">GitHub Repo</a></p>
+    </div>
+</footer>
+
+
+
 </body>
 
 <!--In-Line Style-->
-	<script type="text/javascript">
-
-		$('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: false, // Displays dropdown below the button
-      alignment: 'left' // Displays dropdown with edge aligned to the left of button
-    }
-  );
-
-	</script>
+  <script type="text/javascript">
+  </script>
 </html>
