@@ -18,8 +18,7 @@
 <!--jQuery-->
 <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 
-<!--JavaScript
-<script src = "app.js"></script>-->
+<script src = "../data/friends.js"></script>
 
 <!--Moments-->
 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -28,7 +27,8 @@
 
 <body>
 
-<div class = "container-fluid">
+
+<div class="container">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -36,203 +36,135 @@
             </div>
         </div>
     </nav>
-</div>
 
-<!--About Me Section-->
-<div class = "container">
-    <h3>About You</h3>
-    <form>
-        <div class="form-group">
-            <div class = "row">
-                <div class = "col-md-6">
-                    <label for="exampleInputEmail1">Name (Required)</label>
-                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class = "row">
-                <div class = "col-md-6">
-                    <label for="exampleInputEmail1">Picture Image (Required)</label>
-                    <input type="text" class="form-control" id="imgInput" placeholder="Image">
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
 
 <!--Question Section-->
-<!--Question1-->
-<div class = "container">
-    <div id = "question1">
-        <h4>Question 1</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
+        <div class="panel panel-body">
+            <h2>Survey Questions</h2>
         </div>
-
-    </div>
+        <div class="panel panel-body">
+            <h3>About You</h3>
+            <label for="name">Name (Required)</label>
+            <input type="text" class="form-control" id="name"></input>
+            <label for="image">Link to Photo Image (Required)</label>
+            <input type="text" class="form-control" id="image"></input>
+        </div>
+<!--Question 1-->
+        <div class="panel panel-body">
+            <div>
+                <h3>Question 1</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q1" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q1" value="5">5 (Strongly Agree)</label>
+            </div>
 <!--Question2-->
-    <div id = "question2">
-        <h4>Question 2</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 2</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q2" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q2" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question3-->
-    <div id = "question3">
-        <h4>Question 3</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 3</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q3" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q3" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question4-->
-    <div id = "question4">
-        <h4>Question 4</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 4</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q4" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q4" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question5-->
-    <div id = "question5">
-        <h4>Question 5</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 5</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q5" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q5" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question6-->
-    <div id = "question6">
-        <h4>Question 6</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 6</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q6" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q6" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question7-->
-    <div id = "question7">
-        <h4>Question 7</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 7</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q7" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q7" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question8-->
-    <div id = "question8">
-        <h4>Question 8</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 8</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q8" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q8" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question9-->
-    <div id = "question9">
-        <h4>Question 9</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 9</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q9" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q9" value="5">5 (Strongly Agree)</label>
     </div>
 <!--Question10-->
-    <div id = "question10">
-        <h4>Question 10</h4>
-        <div class = "row">
-            <div class = "col-md-3">
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-        </div>
-
+    <div>
+                <h3>Question 10</h3>
+                <h4>This is the actual question.</h4>
+                <label class="radio-inline"><input type="radio" name="q10" value="1">1 (Strongly Disagree)</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="2">2</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="3">3</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="4">4</label>
+                <label class="radio-inline"><input type="radio" name="q10" value="5">5 (Strongly Agree)</label>
     </div>
 </div>
+</div>
+
+
 
 <!--Button-->
 <div class = "container">
     <div class = "row">
         <div class = "col-md-12">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+            <input type="submit" class="btn btn-primary btn-lg btn-block" id="button">Submit</input>
         </div>
     </div>
 </div>
+</form>
+
 
 <!--Footer-->
 <footer class="footer">
@@ -247,5 +179,50 @@
 
 <!--In-Line Style-->
   <script type="text/javascript">
+
+        //Click Handler for button
+        $('#button').on('click', function(){
+
+            //if name or image is empty
+            if($('#name').val().trim() == ''){
+                alert("Please Enter Your Name!");
+                return;
+            } if($('#image').val().trim() == ''){
+                alert("Your matches are just as shallow as you... We need a picture");
+                return;
+            } 
+
+            //create an array of the answers
+            var answerArray = [];
+
+            for (var i = 1; i <= 10; i++) {
+
+                if( $("input:radio[name=q"+i+"]:checked").val() == null){
+                    alert("Please answer all the questions.");
+                    return;
+                } else{
+                    answerArray.push( $("input:radio[name=q"+i+"]:checked").val() );
+                }
+
+            };
+
+            //console.log(answerArray)
+
+            //create object of form
+            var answerObject = {
+                name: $('#name').val().trim(),
+                image: $('#image').val().trim(),
+                score: answerArray
+            };
+
+            console.log(answerObject);
+
+            //clear data.
+
+            $('#name').val('');
+            $('#image').val('');
+            $('input:radio').attr("checked", false);
+            
+        });
   </script>
 </html>
