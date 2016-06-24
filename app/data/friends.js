@@ -27,3 +27,4 @@ var friends = [
 ];
 
 //export
+module.exports = friends;
