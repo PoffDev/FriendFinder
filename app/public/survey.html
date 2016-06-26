@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- bootstrap javascript -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
 <!--CSS
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
@@ -173,7 +173,7 @@
 <div class = "container">
     <div class = "row">
         <div class = "col-md-12">
-            <input type="submit" class="btn btn-primary btn-lg btn-block" id="button"></input>
+            <input type="submit" class="btn btn-primary btn-lg btn-block" id="button" data-toggle="modal" data-target="#myModal"></input>
         </div>
     </div>
 </div>
@@ -186,9 +186,6 @@
         <p><a href="api/friends">API Friends List</a> | <a href="https://github.com/PoffDev/FriendFinder">GitHub Repo</a></p>
     </div>
 </footer>
-
-
-
 
 
 
@@ -225,6 +222,8 @@
 
 
 <script>
+
+
     
     //Click Handler for button
 $('#button').on('click', function(){
@@ -267,11 +266,13 @@ var currentURL = window.location.origin;
 
 //Post user object to friends API
 
-$.post( currentURL + "/api/friends", answerObject).done(function(data){
+$.post( currentURL + "/api/friends", answerObject, function(data){
 
     console.log(data.name);
     console.log(data.photo);
     $("#friendInfo").html("<h3>" + data.name + "</h3<br><img src=" + data.photo + " style='width:300px;'");
+
+    $('#myModal').modal('show')
 })
 
 //clear data.
@@ -281,6 +282,7 @@ $('#image').val('');
 $('input:radio').attr("checked", false);
 
 return;
+
 
 });
 
