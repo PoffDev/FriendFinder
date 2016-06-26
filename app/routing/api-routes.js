@@ -26,9 +26,29 @@ module.exports = function(app){
 
         for (var i = 0; i < friends.length; i++) {
 
-            for (var j = 0; j < user.score.length; j++) {
+            for (var j = 0; j < user.scores.length; j++) {
 
                 counter += Math.abs(user.scores[i]) - friends[i].scores[j];
+
+            };
+
+            counterArray.push(counter);
+            console.log(counter);
+            counter = 0;
+
+        };
+
+        console.log(counterArray);
+
+        var closestMatch = Math.min.apply(Math, counterArray);
+
+        console.log(closestMatch);
+
+        for (var i = 0; i < friends.length; i++) {
+
+            for (var j = 0; j < user.scores.length; j++) {
+                
+                counter += Math.abs(user.scores[j] - friends[i].scores[j])
 
             };
 
