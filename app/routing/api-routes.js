@@ -19,51 +19,53 @@ module.exports = function(app){
     
     app.post('/api/friends', function(req, res){
 
-        var counterArray = [];
-        var counter = 0
-        var user = req.body;
-        var bestFriend = {};
+        console.log('req.body.name: ' + req.body.name);
+        console.log('req.body.scores.length: ' + req.body.scores.length);
+
+        var match = {};
+
+        var differenceToBeat = 100;
 
         for (var i = 0; i < friends.length; i++) {
 
-            for (var j = 0; j < user.scores.length; j++) {
+            var differenceArray = [];
+            var totalDifference = 0;
 
-                counter += Math.abs(user.scores[i]) - friends[i].scores[j];
+            for (var j = 0; j < friends[i].scores.length; j++) {
 
-            };
-
-            counterArray.push(counter);
-            console.log(counter);
-            counter = 0;
-
-        };
-
-        console.log(counterArray);
-
-        var closestMatch = Math.min.apply(Math, counterArray);
-
-        console.log(closestMatch);
-
-        for (var i = 0; i < friends.length; i++) {
-
-            for (var j = 0; j < user.scores.length; j++) {
+                differenceArray.push( Math.abs( req.body.scores[j] - friends[i].scores[j] ) )
                 
-                counter += Math.abs(user.scores[j] - friends[i].scores[j])
-
             };
 
-            if (counter === closestMatch) {
+            console.log('differenceArray: ' + differenceArray);
 
-                bestFriend = friends[i];
+            for (var k = 0; k < differenceArray.length; k++) {
 
+                totalDifference += differenceArray[k];
+                
             }
 
-            counter = 0;
+            console.log('totalDifference: ' + totalDifference);
 
-        };
+            if (match == {} ) {
+
+                match = friends[i];
+                differenceToBeat = totalDifference;
+            } else if (totalDifference < differenceToBeat ) {
+
+                match = friends[i];
+                differenceToBeat = totalDifference;
+            }
+
+            console.log(differenceToBeat);
+
+        }
+
+        console.log("Your match is: " + match.name)
 
         friends.push(req.body);
-        res.json(bestFriend);
+        res.json(match);
 
     });
-}
+
+};
