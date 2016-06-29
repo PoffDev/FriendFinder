@@ -46,7 +46,7 @@ $.post("/api/friends", answerObject, function(data){
 
 	console.log(data.name);
 	console.log(data.photo);
-	$("#friendInfo").html("<h3>" + data.name + "</h3<br><img src=" + data.photo + " style='width:300px;'");
+	$("#friendInfo").html("<h3>" + data.name + "</h3<br><img src=" + data.photo + " style='width:500px;'</img>");
 
 	$('#myModal').modal('show')
 })
