@@ -1,0 +1,52 @@
+body {
+	/*background-color: #2766FC;*/
+	color: #FFFFFF;
+	font-family: 'Proza Libre', sans-serif;
+	background-image: url('home.jpg');
+	background-size:     cover;                    
+    background-repeat:   repeat-y;
+    background-position: center center;
+}
+
+.jumbotron {
+	background-color: transparent;
+	color: #2766FC; 
+	opacity: .4;
+	margin-top: 6%;
+	margin-left: 10%;
+	width: 45%;
+
+}
+
+.navbar {
+	background-color: #FF006A;
+	opacity: .7;
+}
+
+#surveyTitle {
+	text-align: center;
+	margin: 5%;
+}
+
+.panel {
+	background-color: #FF006A;
+	opacity: .7;
+}
+
+h2{
+	font-family: 'Petit Formal Script', cursive;
+}
+
+h3 {
+	font-family: 'Petit Formal Script', cursive;
+}
+
+.footer{
+	margin-bottom: 0%;
+}
+
+#questions {
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: justify-all;
+}
