@@ -21,7 +21,7 @@ body {
 
 #surveyPanel {
 	text-align: center;
-	margin: 5%;
+	margin: 10%;
 	background-color: transparent;
 }
 
@@ -50,7 +50,17 @@ h4 {
 
 #questionsPanel {
 	padding-left: 10%;
-	padding-right: 10%;
-	text-align: justify-all;
-	background-color: transparent;
+    padding-right: 40%;
+    padding-bottom: 10%;
+    text-align: justify-all;
+    background-color: transparent;
+    margin-bottom: 3%;
+}
+
+#buttonSbt {
+	float: right;
+}
+
+#myModal {
+	color: #FFFFFF;
 }
