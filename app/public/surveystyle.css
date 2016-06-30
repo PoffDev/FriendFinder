@@ -1,0 +1,56 @@
+body {
+	/*background-color: #2766FC;*/
+	color: #2766FC;
+	font-family: 'Proza Libre', sans-serif;
+	background-image: url('home.jpg');
+	background-size:    contain;                    
+    background-repeat:   no-repeat;
+    background-position: ;
+}
+
+.top {
+	text-align: justify;
+	background-color: transparent;
+}
+
+.panel {
+	background-color: transparent;
+	opacity: .7;
+	background-color: transparent;
+}
+
+#surveyPanel {
+	text-align: center;
+	margin: 5%;
+	background-color: transparent;
+}
+
+#aboutPanel {
+	background-color: transparent;
+	opacity: .7;
+}
+
+h2 {
+	font-family: 'Petit Formal Script', cursive;
+}
+
+h3 {
+	font-family: 'Petit Formal Script', cursive;
+}
+
+h4 {
+	font-family: 'Proza Libre', sans-serif;
+}
+
+
+
+.footer{
+	margin-bottom: 0%;
+}
+
+#questionsPanel {
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: justify-all;
+	background-color: transparent;
+}
