@@ -1,2 +1,10 @@
 # FriendFinder
-Week 13 Homewrok, a Node and Express based friend finding application.
+
+Friend Finder is a full-stack Disney Princess dating application...
+
+Technologies Used
+
+HTML, CSS, Javascript
+Node.js
+  Express
+MySQL
